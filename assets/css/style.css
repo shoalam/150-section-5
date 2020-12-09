@@ -1,0 +1,139 @@
+
+/*General Styling*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Yantramanav';
+  color: #BBBBBB;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style: none;
+}
+
+/*services-seciton*/
+.feature-section{
+  position: relative;
+}
+.feature-section-bg{
+   background: url(../../assets/img/featureimage.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 47%;
+}
+
+.feature-box{
+  padding-top: 20px;
+}
+.section-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #030303;
+}
+
+.section-title span{
+    color: #1FB3FD;
+}
+
+.feature-section p{
+      margin: 15px 0;
+}
+
+.accordion-container{
+   min-height: 300px;
+}
+
+.accordion-container .card{
+  margin-bottom: 10px;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.accordion-container .card .card-header{
+   background: transparent;
+   padding: 0;
+   border: none;
+}
+
+.accordion-container .card .card-header h4{
+   border: 1px solid #ddd !important;
+}
+.accordion-container .card .card-header h4 a{
+   color: #030303;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.accordion-container .card .card-header h4 a i{
+   float: right;
+   display: none;
+}
+
+.accordion-container .card .card-header h4 a i{
+   float: right;
+   display: none;
+}
+
+.accordion-container .card .card-header h4 a[aria-expanded="true"] .fa-angle-up{
+   display: block;
+}
+
+.accordion-container .card .card-header h4 a[aria-expanded="false"] .fa-angle-down{
+   display: block;
+}
+.accordion-container .card .card-body{
+   padding: 10px;
+   border-left: 1px solid #ddd !important;
+   border-right: 1px solid #ddd !important;
+}
+
+/*Responsive*/
+
+@media(min-width: 768px){
+  body{
+    overflow: hidden;
+  }
+
+}
+
+@media(max-width: 1200px){
+  .section-title {
+    font-size: 25px;
+}
+
+}
+
+@media(max-width: 767px){
+  .feature-section-bg{
+    height: 40%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .feature-box{
+    margin-top: 350px;
+  }
+
+  .section-title {
+    font-size: 30px;
+}
+
+}
